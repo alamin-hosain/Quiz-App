@@ -6,7 +6,7 @@ export const Home = () => {
     console.log(quiz);
     return (
         <div className="bg-deep-purple-accent-700">
-            <div className="px-10 py-4 mt-10 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-15">
+            <div className="px-10 py-4 mt-6 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-15">
                 <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
                     <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
                         <a href="/" className="mb-6 sm:mx-auto">
@@ -27,7 +27,7 @@ export const Home = () => {
                             </div>
                         </a>
                         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-grey-900 sm:text-4xl md:mx-auto">
+                            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
                                 <span className="relative inline-block">
                                     <svg
                                         viewBox="0 0 52 24"
