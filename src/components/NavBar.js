@@ -84,7 +84,7 @@ export const Nav = () => {
                         </button>
                         {isMenuOpen && (
                             <div className="absolute top-0 left-0 w-full">
-                                <div className="p-5 bg-white border rounded shadow-sm">
+                                <div className="p-5 bg-gray-900 border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div classNameName="w-full bg-black p-4 rounded-2xl">
                                             <NavLink
