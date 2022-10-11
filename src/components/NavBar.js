@@ -22,7 +22,7 @@ export const Nav = () => {
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <NavLink
-                                to="/quiz"
+                                to="/home"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium text-yellow-300"

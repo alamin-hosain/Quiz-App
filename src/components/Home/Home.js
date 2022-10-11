@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import Quizes from "../Quizes";
 import { QuizContext } from "../Root";
 
 export const Home = () => {
@@ -65,17 +66,8 @@ export const Home = () => {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 px-20 mx-auto">
                 {
-
                     quiz.map(q =>
-                        <div key={q.id} className="border border-black p-4 rounded-md shadow-md">
-                            <img className="w-full" src={q.logo} alt="" />
-                            <div className="flex items-center justify-between">
-                                <h3 className="text-xl text-grey-500 font-bold mt-3 ">{q.name}</h3>
-                                <p className="text-md">Total Quiz: {q.total}</p>
-                            </div>
-                            <button className="bg-black text-white px-6 py-2 w-full rounded-md mt-4 cursor-pointer hover:text-yellow-400">Start Practicing </button>
-                        </div>)
-
+                        <Quizes q={q} key={q.id} />)
                 }
 
             </div>
