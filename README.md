@@ -25,3 +25,7 @@ Documentation Link -> [Api Link](https://openapi.programming-hero.com/api/quiz).
 ### React Router Dom v6.4
 
 Documentation Link -> [Api Link](https://reactrouter.com/en/main/start/overview).
+
+### Resources & Credits
+
+Tailwind Components Library-> [Kitwind Link](https://kitwind.io/).
