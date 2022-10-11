@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import './NavBar.css';
 
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ export const Nav = () => {
                         to="/"
                         aria-label="Company"
                         title="Company"
-                        className="inline-flex items-center"
+                        className="font-medium text-yellow-300 "
                     >
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                             !Oh MY Quiz
@@ -24,7 +25,7 @@ export const Nav = () => {
                                 to="/quiz"
                                 aria-label="Our product"
                                 title="Our product"
-                                className="font-medium text-yellow-300 "
+                                className="font-medium text-yellow-300"
                             >
                                 Take Quiz
                             </NavLink>
