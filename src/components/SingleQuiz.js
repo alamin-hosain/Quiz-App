@@ -15,6 +15,16 @@ const SingleQuiz = ({ singleQuestion, index }) => {
 
     }
 
+    const handleAnswer = (option) => {
+        if (option === correctAnswer) {
+            console.log('true')
+        } else {
+            console.log('false')
+        }
+        // console.log(option, correctAnswer);
+    }
+
+
     return (
         <div className=' w-3/5 mx-auto bg-white p-6 rounded-lg shadow-sm mt-12'>
             <div className='mb-10'>
@@ -30,8 +40,8 @@ const SingleQuiz = ({ singleQuestion, index }) => {
                 </div>
 
                 <div className='mt-6 grid grid-cols-2 gap-4'>
-                    {options.map(option => (
-                        <div className='flex items-center border border-gray-600 p-6 rounded-lg cursor-pointer'>
+                    {options.map((option, inedx) => (
+                        <div className='flex items-center border border-gray-600 p-6 rounded-lg cursor-pointer hover:bg-green-300' onClick={() => handleAnswer(option)} key={inedx}>
                             <button type='radio'><IoIosRadioButtonOff /></button>
                             <p className='ml-6'>{option}</p>
                         </div>
