@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
-import { IoIosRadioButtonOff, IoIosRadioButtonOn, IoMdEyeOff, IoMdEye } from "react-icons/io";
+import { IoIosRadioButtonOff, IoMdEyeOff, IoMdEye } from "react-icons/io";
+import Option from './Option';
 
-const SingleQuiz = ({ singleQuestion, index }) => {
+
+const SingleQuiz = ({ singleQuestion, index, handleCount }) => {
+
     const { id, question, correctAnswer, options } = singleQuestion;
+
     const [correct, setCorrect] = useState('');
 
     const handleEyeButton = correctAnswer => {
@@ -12,17 +16,8 @@ const SingleQuiz = ({ singleQuestion, index }) => {
         else {
             setCorrect('');
         }
-
     }
 
-    const handleAnswer = (option) => {
-        if (option === correctAnswer) {
-            console.log('true')
-        } else {
-            console.log('false')
-        }
-        // console.log(option, correctAnswer);
-    }
 
 
     return (
@@ -40,16 +35,15 @@ const SingleQuiz = ({ singleQuestion, index }) => {
                 </div>
 
                 <div className='mt-6 grid grid-cols-2 gap-4'>
-                    {options.map((option, inedx) => (
-                        <div className='flex items-center border border-gray-600 p-6 rounded-lg cursor-pointer hover:bg-green-300' onClick={() => handleAnswer(option)} key={inedx}>
-                            <button type='radio'><IoIosRadioButtonOff /></button>
-                            <p className='ml-6'>{option}</p>
-                        </div>
+                    {options.map((option, idx) => (
+                        <Option key={idx} option={option} correctAnswer={correctAnswer} handleCount={handleCount} id={id} />
                     ))}
                 </div>
 
             </div>
+
         </div>
+
     );
 };
 

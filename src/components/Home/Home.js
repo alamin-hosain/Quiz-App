@@ -4,7 +4,9 @@ import { QuizContext } from "../Root";
 
 export const Home = () => {
     const quiz = useContext(QuizContext);
-    console.log(quiz);
+
+
+
     return (
         <div className="bg-deep-purple-accent-700">
             <div className="px-10 py-4 mt-6 md:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-15">
