@@ -10,7 +10,11 @@ const Quizes = ({ q }) => {
                 <h3 className="text-xl text-grey-500 font-bold mt-3 ">{q.name}</h3>
                 <p className="text-md">Total Quiz: {q.total}</p>
             </div>
-            <button className="bg-black text-white px-6 py-2 w-full rounded-md mt-4 cursor-pointer hover:text-yellow-400"><Link to={`/quiz/${q.id}`}>Start Practicing</Link> </button>
+            <Link to={`/quiz/${q.id}`}>
+                <button className="bg-black text-white px-6 py-2 w-full rounded-md mt-4 cursor-pointer hover:text-yellow-400">Start Practicing </button>
+            </Link>
+
+
         </div>)
 };
 

@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### Live Link
 
-Hosted in Netlify -> [deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Hosted in Netlify -> [deployment](https://b6-quiz-crackerz-alamin-hosai.netlify.app/)
 
 ## Context API
 
