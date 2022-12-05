@@ -2,7 +2,8 @@
 
 A Quiz web app for gaining more knowledge and concepts on frontend development and frontend languages.
 
-## Available Scripts
+## Live Site URL
+Visit Live Site: [Oh My Quiz](https://b6-quiz-crackerz-alamin-hosai.netlify.app/)
 
 In the project directory, you can run:
 
